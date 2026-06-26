@@ -1,0 +1,8 @@
+ollama
+faiss-cpu
+numpy
+sentence-transformers
+redis
+markdown
+watchdog
+colorama
