@@ -1,0 +1,6 @@
+ollama
+sentence-transformers
+faiss-cpu
+redis
+numpy
+pylint
