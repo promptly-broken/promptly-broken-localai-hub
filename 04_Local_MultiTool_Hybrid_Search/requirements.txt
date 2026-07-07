@@ -1,0 +1,4 @@
+ollama
+numpy
+sentence-transformers
+rich
