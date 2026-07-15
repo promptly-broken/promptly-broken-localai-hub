@@ -1,0 +1,4 @@
+redis
+ollama
+faiss-cpu
+sentence-transformers
