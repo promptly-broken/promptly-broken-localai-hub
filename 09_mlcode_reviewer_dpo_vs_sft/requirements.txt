@@ -1,0 +1,5 @@
+mlx-lm-lora
+streamlit
+pandas
+scikit-learn
+ollama

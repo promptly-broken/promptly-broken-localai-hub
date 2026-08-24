@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────
+# DPO Fine-Tuning Configuration for mlx-lm-lora
+# Target: Qwen2.5-Coder-7B-Instruct on Apple Silicon (48GB)
+#
+# NOTE: DPO loads TWO copies of the model (train + reference),
+# so memory is tight. Batch size 1 + grad checkpoint required.
+#
+# NOTE: train_mode has a hardcoded argparse default ("sft")
+# that shadows YAML values. Pass --train-mode dpo on the CLI.
+# ─────────────────────────────────────────────────────────────
+
+model: "Qwen/Qwen2.5-Coder-7B"
+
+train: true
+
+# Data directory containing train.jsonl and valid.jsonl
+data: "data"
+
+# DPO hyperparameters
+beta: 0.1                          # KL-divergence penalty weight
+dpo_cpo_loss_type: "sigmoid"       # sigmoid | hinge | ipo | dpop
+
+# Training loop — batch_size 1 to fit dual-model DPO in 48GB
+batch_size: 1
+iters: 600
+learning_rate: 1.0e-5
+gradient_accumulation_steps: 4     # effective batch = 4
+steps_per_report: 10
+steps_per_eval: 50
+save_every: 100
+adapter_path: "adapters"
+max_seq_length: 1024               # cap sequence length to save memory
+grad_checkpoint: true              # trade compute for memory
+
+# LoRA configuration — fewer layers to reduce memory pressure
+num_layers: 8

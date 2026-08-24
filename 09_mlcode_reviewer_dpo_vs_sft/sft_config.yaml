@@ -1,0 +1,26 @@
+# ─────────────────────────────────────────────────────────────
+# SFT Fine-Tuning Configuration for mlx-lm-lora
+# Target: Qwen2.5-Coder-7B (Base) on Apple Silicon (48GB)
+# ─────────────────────────────────────────────────────────────
+
+model: "mlx-community/Qwen2.5-Coder-32B-4bit"
+
+train: true
+
+# Data directory containing train.jsonl and valid.jsonl
+data: "sft_data"
+
+# Training loop
+batch_size: 1                      # Dropped back to 1 for the 32B model!
+iters: 300                         # Reduced: 10x more data means fewer epochs needed
+learning_rate: 2.0e-5
+gradient_accumulation_steps: 4
+steps_per_report: 10
+steps_per_eval: 50
+save_every: 100
+adapter_path: "sft_32b_adapters"   # Save to a new folder
+max_seq_length: 1024
+grad_checkpoint: true
+
+# LoRA configuration
+num_layers: 8
