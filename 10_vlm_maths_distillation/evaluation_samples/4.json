@@ -1,0 +1,10 @@
+{
+    "query": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Are there fewer yellow regular buss than small yellow metallic school buss?\nChoices:\n(A) Yes\n(B) No",
+    "answer": "No",
+    "choices": [
+        "Yes",
+        "No"
+    ],
+    "question_type": "multi_choice",
+    "original_index": 121
+}

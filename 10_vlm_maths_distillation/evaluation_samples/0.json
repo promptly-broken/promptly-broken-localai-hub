@@ -1,0 +1,7 @@
+{
+    "query": "Hint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all big red metallic spheres. Subtract all big brown matte things. How many objects are left?",
+    "answer": "6",
+    "choices": null,
+    "question_type": "free_form",
+    "original_index": 51
+}

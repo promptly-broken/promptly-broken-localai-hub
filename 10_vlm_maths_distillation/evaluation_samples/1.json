@@ -1,0 +1,13 @@
+{
+    "query": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: In the figure above, the ratio of the length of line AB to the length of line AC is 2 : 5. If AC = 25, what is the length of line AB?\nChoices:\n(A) 8\n(B) 10\n(C) 15\n(D) 18\n(E) 20",
+    "answer": "10",
+    "choices": [
+        "8",
+        "10",
+        "15",
+        "18",
+        "20"
+    ],
+    "question_type": "multi_choice",
+    "original_index": 53
+}

@@ -1,0 +1,12 @@
+{
+    "query": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, AB is the diameter of \u2299O, CD is the chord of \u2299O, \u2220ADC = 26.0, then the degree of \u2220CAB is ()\nChoices:\n(A) 26\u00b0\n(B) 74\u00b0\n(C) 64\u00b0\n(D) 54\u00b0",
+    "answer": "64\u00b0",
+    "choices": [
+        "26\u00b0",
+        "74\u00b0",
+        "64\u00b0",
+        "54\u00b0"
+    ],
+    "question_type": "multi_choice",
+    "original_index": 58
+}

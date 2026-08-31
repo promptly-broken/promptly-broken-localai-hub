@@ -1,0 +1,7 @@
+{
+    "query": "Hint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the perimeter of the rectangle?",
+    "answer": "6",
+    "choices": null,
+    "question_type": "free_form",
+    "original_index": 55
+}

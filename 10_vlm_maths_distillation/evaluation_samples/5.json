@@ -1,0 +1,10 @@
+{
+    "query": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the sandwich cut in half?\nChoices:\n(A) Yes\n(B) No",
+    "answer": "Yes",
+    "choices": [
+        "Yes",
+        "No"
+    ],
+    "question_type": "multi_choice",
+    "original_index": 137
+}

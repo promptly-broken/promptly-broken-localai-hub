@@ -1,0 +1,12 @@
+{
+    "query": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: \u5982\u56fe\uff0c\u4e00\u5757\u76f4\u89d2\u4e09\u89d2\u677f60\u00b0\u7684\u89d2\u7684\u9876\u70b9A\u4e0e\u76f4\u89d2\u9876\u70b9C\u5206\u522b\u5728\u4e24\u5e73\u884c\u7ebfFG\uff0cDE\u4e0a\uff0c\u659c\u8fb9AB\u5e73\u5206\u2220CAG\uff0c\u4ea4\u76f4\u7ebfDE\u4e8e\u70b9H\uff0c\u5219\u2220BCH\u7684\u5927\u5c0f\u4e3a\uff08\uff09\nChoices:\n(A) 60\u00b0\n(B) 45\u00b0\n(C) 30\u00b0\n(D) 25\u00b0",
+    "answer": "30\u00b0",
+    "choices": [
+        "60\u00b0",
+        "45\u00b0",
+        "30\u00b0",
+        "25\u00b0"
+    ],
+    "question_type": "multi_choice",
+    "original_index": 54
+}

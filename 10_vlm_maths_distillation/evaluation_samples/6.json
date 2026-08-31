@@ -1,0 +1,10 @@
+{
+    "query": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the number of gray rubber objects in front of the small yellow aeroplane greater than the number of big cyan matte fighters?\nChoices:\n(A) Yes\n(B) No",
+    "answer": "Yes",
+    "choices": [
+        "Yes",
+        "No"
+    ],
+    "question_type": "multi_choice",
+    "original_index": 50
+}

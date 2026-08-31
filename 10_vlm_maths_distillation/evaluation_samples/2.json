@@ -1,0 +1,10 @@
+{
+    "query": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Does Firebrick have the maximum area under the curve?\nChoices:\n(A) yes\n(B) no",
+    "answer": "yes",
+    "choices": [
+        "yes",
+        "no"
+    ],
+    "question_type": "multi_choice",
+    "original_index": 57
+}
