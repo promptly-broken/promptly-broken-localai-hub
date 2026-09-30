@@ -1,0 +1,27 @@
+# ─────────────────────────────────────────────────────────────
+# PRM LoRA Fine-Tuning Configuration for mlx-lm
+# Model: Qwen2.5-Coder-7B-4bit on Apple Silicon
+# ─────────────────────────────────────────────────────────────
+
+model: "mlx-community/Qwen2.5-Coder-7B-4bit"
+
+train: true
+
+# Data directory containing train.jsonl and valid.jsonl
+data: "prm_data_filtered"
+
+# Training loop
+batch_size: 2
+iters: 500
+learning_rate: 1.5e-5
+optimizer: "adamw"
+gradient_accumulation_steps: 4
+steps_per_report: 10
+steps_per_eval: 25
+save_every: 50
+adapter_path: "mcts_reasoner/prm_adapters"
+max_seq_length: 512
+grad_checkpoint: true
+
+# LoRA configuration
+num_layers: 8

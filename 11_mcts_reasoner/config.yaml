@@ -1,0 +1,25 @@
+# ═══════════════════════════════════════════════════════════
+# Promptly Broken — MCTS + Process Reward Model Configuration
+# ═══════════════════════════════════════════════════════════
+
+generator:
+  model: "qwen2.5-coder:7b-instruct"
+  ollama_url: "http://127.0.0.1:11434/api/generate"
+  temperature: 0.7
+  k_branching: 4
+
+verifier:
+  mode: "symbolic"                     # "symbolic" (instant ground truth) | "ollama" (local LLM) | "mlx"
+  model: "qwen2.5-coder:7b-instruct"
+  prune_threshold: 0.25
+  adapter_path: "mcts_reasoner/prm_adapters"
+
+mcts:
+  c_puct: 1.414                        # Exploration constant
+  max_simulations: 150                 # Search budget per puzzle
+  target: 24
+
+hardware:
+  device: "MacBook Pro Apple Silicon"
+  framework: "MLX / Ollama"
+  unified_memory_gb: 46
