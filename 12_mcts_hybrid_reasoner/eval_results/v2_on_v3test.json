@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-10-07 15:28:24",
+  "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "adapter": "prm_adapters_v2",
+  "scorer": "logit",
+  "dataset": "prm_data_v3/test.jsonl",
+  "total_samples": 1441,
+  "class_distribution": {
+    "pos_accept": 208,
+    "neg_reject": 1233
+  },
+  "accuracy": 0.6759,
+  "balanced_accuracy": 0.6767,
+  "recall_accept": 0.6779,
+  "recall_reject": 0.6756,
+  "precision_accept": 0.2606,
+  "f1_accept": 0.3765,
+  "auroc": 0.7914,
+  "confusion_matrix": {
+    "tp": 141,
+    "tn": 833,
+    "fp": 400,
+    "fn": 67
+  },
+  "stratified_by_remaining_size": {
+    "size_1": {
+      "count": 135,
+      "accuracy": 1.0,
+      "mean_latency_sec": 0.15
+    },
+    "size_2": {
+      "count": 321,
+      "accuracy": 0.881619937694704,
+      "mean_latency_sec": 0.138
+    },
+    "size_3": {
+      "count": 838,
+      "accuracy": 0.4880668257756563,
+      "mean_latency_sec": 0.133
+    },
+    "size_4": {
+      "count": 147,
+      "accuracy": 1.0,
+      "mean_latency_sec": 0.128
+    }
+  },
+  "latency": {
+    "mean_sec": 0.135,
+    "median_sec": 0.129,
+    "p95_sec": 0.188
+  }
+}

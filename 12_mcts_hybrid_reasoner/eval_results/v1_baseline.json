@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-10-06 21:54:14",
+  "model": "mlx-community/Qwen2.5-Coder-7B-4bit",
+  "adapter": "mcts_reasoner/prm_adapters",
+  "scorer": "gen",
+  "dataset": "prm_data/valid.jsonl",
+  "total_samples": 60,
+  "class_distribution": {
+    "pos_accept": 26,
+    "neg_reject": 34
+  },
+  "accuracy": 0.7,
+  "balanced_accuracy": 0.6765,
+  "recall_accept": 0.5,
+  "recall_reject": 0.8529,
+  "precision_accept": 0.7222,
+  "f1_accept": 0.5909,
+  "auroc": 0.6765,
+  "confusion_matrix": {
+    "tp": 13,
+    "tn": 29,
+    "fp": 5,
+    "fn": 13
+  },
+  "stratified_by_remaining_size": {
+    "size_1": {
+      "count": 10,
+      "accuracy": 0.9
+    },
+    "size_2": {
+      "count": 22,
+      "accuracy": 0.7727272727272727
+    },
+    "size_3": {
+      "count": 20,
+      "accuracy": 0.4
+    }
+  },
+  "latency": {
+    "mean_sec": 2.862,
+    "median_sec": 2.859,
+    "p95_sec": 2.91
+  }
+}

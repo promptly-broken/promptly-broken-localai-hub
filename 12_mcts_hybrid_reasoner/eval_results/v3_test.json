@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-10-07 15:20:15",
+  "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "adapter": "prm_adapters_v3",
+  "scorer": "scratch",
+  "dataset": "prm_data_v3/test.jsonl",
+  "total_samples": 1441,
+  "class_distribution": {
+    "pos_accept": 208,
+    "neg_reject": 1233
+  },
+  "accuracy": 0.8334,
+  "balanced_accuracy": 0.5849,
+  "recall_accept": 0.2356,
+  "recall_reject": 0.9343,
+  "precision_accept": 0.3769,
+  "f1_accept": 0.2899,
+  "auroc": 0.6062,
+  "confusion_matrix": {
+    "tp": 49,
+    "tn": 1152,
+    "fp": 81,
+    "fn": 159
+  },
+  "stratified_by_remaining_size": {
+    "size_1": {
+      "count": 135,
+      "accuracy": 1.0,
+      "mean_latency_sec": 0.115
+    },
+    "size_2": {
+      "count": 321,
+      "accuracy": 0.8099688473520249,
+      "mean_latency_sec": 1.447
+    },
+    "size_3": {
+      "count": 838,
+      "accuracy": 0.7863961813842482,
+      "mean_latency_sec": 1.914
+    },
+    "size_4": {
+      "count": 147,
+      "accuracy": 1.0,
+      "mean_latency_sec": 0.097
+    }
+  },
+  "latency": {
+    "mean_sec": 1.456,
+    "median_sec": 0.64,
+    "p95_sec": 4.022
+  },
+  "scratch": {
+    "rows_with_scratchpad": 1159,
+    "mean_tokens": 56.3,
+    "max_tokens": 260,
+    "unclosed_failures": 28
+  }
+}

@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────
+# PRM LoRA Fine-Tuning Configuration v3 (oracle scratchpad) for mlx-lm-lora
+# Model: Qwen2.5-7B-Instruct-4bit on Apple Silicon
+# Differences vs v2: scratchpad data, longer seq, lr 3e-5, 1400 iters (~2 epochs)
+# ─────────────────────────────────────────────────────────────
+
+model: "mlx-community/Qwen2.5-7B-Instruct-4bit"
+
+train: true
+train_type: "lora"
+train_mode: "sft"
+
+# Data directory containing train.jsonl, valid.jsonl, test.jsonl
+data: "prm_data_v3"
+mask_prompt: true
+
+# Training loop
+batch_size: 8
+iters: 1400
+learning_rate: 3.0e-5
+optimizer: "adamw"
+gradient_accumulation_steps: 2
+steps_per_report: 20
+steps_per_eval: 100
+save_every: 200
+adapter_path: "prm_adapters_v3"
+max_seq_length: 512
+grad_checkpoint: true
+fuse: false
+
+# Full 28-layer LoRA rank 16
+num_layers: 28
+lora_parameters:
+  rank: 16
+  scale: 20.0
+  dropout: 0.05

@@ -1,0 +1,35 @@
+{
+  "num_puzzles": 50,
+  "start_rank": 901,
+  "modes": [
+    "symbolic",
+    "hybrid"
+  ],
+  "greedy_wins": 0,
+  "mode_stats": {
+    "symbolic": {
+      "wins": 50,
+      "total_nodes": 4552,
+      "pruned_nodes": 3790,
+      "total_ms": 664.3004417419434,
+      "sym_agree": 0,
+      "mlx_fp": 0,
+      "mlx_fn": 0,
+      "verifier_calls": 113374,
+      "cache_hits": 0,
+      "model_ms": 0.0
+    },
+    "hybrid": {
+      "wins": 50,
+      "total_nodes": 11194,
+      "pruned_nodes": 9129,
+      "total_ms": 154894.84667778015,
+      "sym_agree": 50,
+      "mlx_fp": 0,
+      "mlx_fn": 0,
+      "verifier_calls": 284396,
+      "cache_hits": 0,
+      "model_ms": 3952765.1966675473
+    }
+  }
+}
