@@ -5,7 +5,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.35+-red.svg)](https://streamlit.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **"No cloud GPUs. No API keys. Just 46GB and curiosity."**  
+> **"No cloud GPUs. No API keys. Just 48GB and curiosity."**  
 > *MCTS Reasoner* implements **Monte Carlo Tree Search (MCTS)** guided by a **Hybrid Process Reward Model (PRM)** on Apple Silicon (M-series / MLX). It demonstrates how a local 7B model can overcome compounding hallucinations and beat larger models zero-shot on algorithmic constraint puzzles (Game of 24) through deliberate step-level verification and backtracking.
 
 ---
